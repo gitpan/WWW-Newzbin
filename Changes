@@ -1,0 +1,6 @@
+Revision history for Perl module WWW::Newzbin
+
+0.01 Thu Nov 29 13:30:41 2007
+    - original version; searches files index and generates .nzb files
+
+
