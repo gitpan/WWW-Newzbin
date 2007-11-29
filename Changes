@@ -1,5 +1,8 @@
 Revision history for Perl module WWW::Newzbin
 
+0.03 Thu Nov 29 17:19:23 2007
+    - documentation fix: search_files() returns a "groups" arrayref, not hashref
+
 0.02 Thu Nov 29 14:30:02 2007
     - small fix to tarball to make the distribution uploadable to CPAN
 
