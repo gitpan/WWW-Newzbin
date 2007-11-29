@@ -1,5 +1,8 @@
 Revision history for Perl module WWW::Newzbin
 
+0.02 Thu Nov 29 14:30:02 2007
+    - small fix to tarball to make the distribution uploadable to CPAN
+
 0.01 Thu Nov 29 13:30:41 2007
     - original version; searches files index and generates .nzb files
 
