@@ -1,5 +1,8 @@
 Revision history for Perl module WWW::Newzbin
 
+0.04 Thu Nov 29 17:30:30 2007
+    - more stupid documentation fixes
+
 0.03 Thu Nov 29 17:19:23 2007
     - documentation fix: search_files() returns a "groups" arrayref, not hashref
 

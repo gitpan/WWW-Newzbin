@@ -9,7 +9,7 @@ use WWW::Newzbin::Constants qw(:all);
 
 use LWP::UserAgent;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 # lwp::useragent object for communicating with newzbin
 my $ua = LWP::UserAgent->new(
@@ -606,7 +606,7 @@ C<author> - The name of the user who posted the file to Usenet.
 
 =item *
 
-C<groups> - A hashref containing a list of the newsgroups to which this file was posted.
+C<groups> - An arrayref containing a list of the newsgroups to which this file was posted.
 
 =back
 
