@@ -1,5 +1,9 @@
 Revision history for Perl module WWW::Newzbin
 
+0.05 Tue Mar 25 11:59:30 2008
+    - Makefile.PL bugfix where a non-existent version of LWP::UserAgent was sought (thanks deadjones)
+    - META.yml file now included in the distribution
+
 0.04 Thu Nov 29 17:30:30 2007
     - more stupid documentation fixes
 

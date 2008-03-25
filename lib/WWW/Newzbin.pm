@@ -9,7 +9,7 @@ use WWW::Newzbin::Constants qw(:all);
 
 use LWP::UserAgent;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 # lwp::useragent object for communicating with newzbin
 my $ua = LWP::UserAgent->new(

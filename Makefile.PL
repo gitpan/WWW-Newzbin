@@ -10,7 +10,7 @@ WriteMakefile(
     ABSTRACT     => 'Interface to Newzbin.com\'s Usenet index',
     PREREQ_PM    => {
                      'Test::Simple' => 0.44,
-		     'LWP::UserAgent' => 2.36,
+		     'LWP::UserAgent' => 2.036,
 		     'Exporter' => 5.58,
                     },
 );

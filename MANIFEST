@@ -3,6 +3,7 @@ README
 LICENSE
 Changes
 Makefile.PL
+META.yml
 lib/WWW/Newzbin.pm
 lib/WWW/Newzbin/Constants.pm
 t/001_load.t

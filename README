@@ -191,7 +191,7 @@ METHODS
 
     *   "author" - The name of the user who posted the file to Usenet.
 
-    *   "groups" - A hashref containing a list of the newsgroups to which
+    *   "groups" - An arrayref containing a list of the newsgroups to which
         this file was posted.
 
     The method "die"s if required parameters were not passed to it, and
