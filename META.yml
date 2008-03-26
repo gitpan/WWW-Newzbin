@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                WWW-Newzbin
-version:             0.05
+version:             0.06
 abstract:            Interface to Newzbin.com's Usenet index
 license:             perl
 author:              
@@ -8,7 +8,7 @@ author:
 generated_by:        ExtUtils::MakeMaker version 6.42
 distribution_type:   module
 requires:     
-    Test::Simple:   0.44
+    Test::More:     0.78
     LWP::UserAgent: 2.036
     Exporter:       5.58
 meta-spec:

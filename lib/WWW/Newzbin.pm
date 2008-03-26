@@ -9,7 +9,7 @@ use WWW::Newzbin::Constants qw(:all);
 
 use LWP::UserAgent;
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 # lwp::useragent object for communicating with newzbin
 my $ua = LWP::UserAgent->new(
@@ -60,7 +60,7 @@ sub _init {
 		}
 	}
 	
-	# # check for existence of required parameters
+	# check for existence of required parameters
 	foreach my $required (qw(username password)) {
 		if (!$self->{param}->{"$required"}) {
 			return "missing required parameter '$required'";
