@@ -6,7 +6,7 @@ use warnings;
 
 use base qw(Exporter);
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 #=============================================================================#
 # constant groups
@@ -124,57 +124,31 @@ Exports constants relating to Newzbin categories:
 
 =over
 
-=item *
+=item * C<NEWZBIN_CAT_UNKNOWN> - "Unknown" category
 
-C<NEWZBIN_CAT_UNKNOWN> - "Unknown" category
+=item * C<NEWZBIN_CAT_ANIME> - "Anime" category
 
-=item *
+=item * C<NEWZBIN_CAT_APPS> - "Apps" category
 
-C<NEWZBIN_CAT_ANIME> - "Anime" category
+=item * C<NEWZBIN_CAT_BOOKS> - "Books" category
 
-=item *
+=item * C<NEWZBIN_CAT_CONSOLES> - "Consoles" category
 
-C<NEWZBIN_CAT_APPS> - "Apps" category
+=item * C<NEWZBIN_CAT_EMULATION> - "Emulation" category
 
-=item *
+=item * C<NEWZBIN_CAT_GAMES> - "Games" category
 
-C<NEWZBIN_CAT_BOOKS> - "Books" category
+=item * C<NEWZBIN_CAT_MISC> - "Misc" category
 
-=item *
+=item * C<NEWZBIN_CAT_MOVIES> - "Movies" category
 
-C<NEWZBIN_CAT_CONSOLES> - "Consoles" category
+=item * C<NEWZBIN_CAT_MUSIC> - "Music" category
 
-=item *
+=item * C<NEWZBIN_CAT_PDA> - "PDA" category
 
-C<NEWZBIN_CAT_EMULATION> - "Emulation category
+=item * C<NEWZBIN_CAT_RESOURCES> - "Resources" category
 
-=item *
-
-C<NEWZBIN_CAT_GAMES> - "Games" category
-
-=item *
-
-C<NEWZBIN_CAT_MISC> - "Misc" category
-
-=item *
-
-C<NEWZBIN_CAT_MOVIES> - "Movies" category
-
-=item *
-
-C<NEWZBIN_CAT_MUSIC> - "Music" category
-
-=item *
-
-C<NEWZBIN_CAT_PDA> - "PDA" category
-
-=item *
-
-C<NEWZBIN_CAT_RESOURCES> - "Resources" category
-
-=item *
-
-C<NEWZBIN_CAT_TV> - "TV" category
+=item * C<NEWZBIN_CAT_TV> - "TV" category
 
 =back
 
@@ -184,25 +158,15 @@ Exports constants related to searching Newzbin (particularly via L<WWW::Newzbin>
 
 =over
 
-=item *
+=item * C<NEWZBIN_SORTFIELD_DATE> - Sort search results by date posted
 
-C<NEWZBIN_SORTFIELD_DATE> - Sort search results by date posted
+=item * C<NEWZBIN_SORTFIELD_SUBJECT> - Sort search results alphabetically by subject
 
-=item *
+=item * C<NEWZBIN_SORTFIELD_FILESIZE> - Sort search results by file size
 
-C<NEWZBIN_SORTFIELD_SUBJECT> - Sort search results alphabetically by subject
+=item * C<NEWZBIN_SORTORDER_ASC> - Sort search results in ascending order
 
-=item *
-
-C<NEWZBIN_SORTFIELD_FILESIZE> - Sort search results by file size
-
-=item *
-
-C<NEWZBIN_SORTORDER_ASC> - Sort search results in ascending order
-
-=item *
-
-C<NEWZBIN_SORTORDER_DESC> - Sort search results in descending order
+=item * C<NEWZBIN_SORTORDER_DESC> - Sort search results in descending order
 
 =back
 
@@ -222,7 +186,7 @@ Chris Novakovic <chrisn@cpan.org>
 
 =head1 COPYRIGHT
 
-Copyright 2007 Chris Novakovic.
+Copyright 2007-8 Chris Novakovic.
 
 This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 

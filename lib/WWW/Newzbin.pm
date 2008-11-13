@@ -9,7 +9,7 @@ use WWW::Newzbin::Constants qw(:all);
 
 use LWP::UserAgent;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 # lwp::useragent object for communicating with newzbin
 my $ua = LWP::UserAgent->new(
@@ -560,7 +560,7 @@ C<group> - The Usenet newsgroup (or newsgroups) to search. May be a scalar conta
 
 =item *
 
-C<retention> - The maximum age (in days) of a file that is permitted for it to be included as a search result. Must be at least 1, and at most 200 (this might change without notice; see L</"LIMITATIONS">). Default is currently 7 (again, this might change without notice; see L</"LIMITATIONS">).
+C<retention> - The maximum age (in days) of a file that is permitted for it to be included as a search result. Must be at least 1, and at most 240 (this might change without notice; see L</"LIMITATIONS">). Default is currently 7 (again, this might change without notice; see L</"LIMITATIONS">).
 
 =item *
 
@@ -761,7 +761,7 @@ The C<posttime> and C<filesize> values returned for each result by L</"search_fi
 
 I<FileFind>, the Newzbin API upon which L</"search_files"> relies, has default values for a number of its parameters (specifically: C<retention>, C<resultoffset> and C<resultlimit>). The C<WWW::Newzbin> documentation states these defaults but they are actually set by the Newzbin API, not by this module. This means, of course, that the Newzbin developers could change these default values at any time, which may drastically alter the search results that C<WWW::Newzbin> returns. Every effort will be made to keep this documentation up-to-date with any changes made to the default values in the I<FileFind> API, but you are advised to explicitly specify L</"search_files"> parameters rather than relying too much on the defaults.
 
-Newzbin's retention is currently 200 days. At the moment no mainstream Usenet provider has a retention that Newzbin doesn't cover, but this might change in future. Therefore, while the C<WWW::Newzbin> documentation states that the L</"search_files"> C<retention> parameter must not exceed 200, this limit is not hardcoded and specifying longer retentions will not result in a warning or error.
+Newzbin's retention is currently 240 days. At the moment no mainstream Usenet provider has a retention that Newzbin doesn't cover, but this might change in future. Therefore, while the C<WWW::Newzbin> documentation states that the L</"search_files"> C<retention> parameter must not exceed 240, this limit is not hardcoded and specifying longer retentions will not result in a warning or error.
 
 Newzbin intentionally caps I<FileFind>'s result limit to 5000. The L</"search_files"> C<resultlimit> parameter, therefore, should not exceed 5000; although Newzbin could of course change or remove this limit at any time without notice, so C<WWW::Newzbin> will not produce a warning or error if C<resultlimit> is greater than 5000.
 
@@ -791,7 +791,7 @@ Chris Novakovic <chrisn@cpan.org>
 
 =head1 COPYRIGHT
 
-Copyright 2007 Chris Novakovic.
+Copyright 2007-8 Chris Novakovic.
 
 This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 

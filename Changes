@@ -1,5 +1,10 @@
 Revision history for Perl module WWW::Newzbin
 
+0.07 Wed Nov 12 23:3327 2008
+    - Added tests for POD correctness and POD coverage
+    - Added examples/ directory containing example scripts of how to use the distribution
+    - Updated documentation to reflect Newzbin's new 240-day retention policy
+
 0.06 Wed Mar 26 12:31:27 2008
     - Better Test::More tests
 

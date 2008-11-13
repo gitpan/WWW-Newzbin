@@ -136,7 +136,7 @@ METHODS
 
     *   "retention" - The maximum age (in days) of a file that is permitted
         for it to be included as a search result. Must be at least 1, and at
-        most 200 (this might change without notice; see "LIMITATIONS").
+        most 240 (this might change without notice; see "LIMITATIONS").
         Default is currently 7 (again, this might change without notice; see
         "LIMITATIONS").
 
@@ -341,11 +341,11 @@ LIMITATIONS
     advised to explicitly specify "search_files" parameters rather than
     relying too much on the defaults.
 
-    Newzbin's retention is currently 200 days. At the moment no mainstream
+    Newzbin's retention is currently 240 days. At the moment no mainstream
     Usenet provider has a retention that Newzbin doesn't cover, but this
     might change in future. Therefore, while the "WWW::Newzbin"
     documentation states that the "search_files" "retention" parameter must
-    not exceed 200, this limit is not hardcoded and specifying longer
+    not exceed 240, this limit is not hardcoded and specifying longer
     retentions will not result in a warning or error.
 
     Newzbin intentionally caps *FileFind*'s result limit to 5000. The
@@ -391,7 +391,7 @@ AUTHOR
     Chris Novakovic <chrisn@cpan.org>
 
 COPYRIGHT
-    Copyright 2007 Chris Novakovic.
+    Copyright 2007-8 Chris Novakovic.
 
     This program is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
